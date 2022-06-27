@@ -89,7 +89,7 @@ this will clone the latest version of the kiauh script into to `kiauh` folder in
 
 to execute kiauh run `./kiauh/kiauh.sh` and you will be presented with a menu similar to this:
 
-[kiauh](images/kiauh_main.png)
+![kiauh](images/kiauh_main.png)
 
 Choose `1` for `Install`, and proceed to install Klipper, Moonraker, and the frontend of your choice (Fluidd or Mainsail are recommended)
 
