@@ -30,25 +30,22 @@
 ## Initial Setup
 
 The rest of the setup will be done via SSH connection.  You will need a suitable SSH client.  
-[Putty](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html) is a popular choice on Windows.  
-Mac OS and Linux should have `ssh` preinstalled.
 
-You will need the IP Address of Le Potato.  You can obtain this from your Router's DHCP Lease table.  
-The specifics of this are unique for every router, and outside the scope of this documentation.
+- [Putty](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html) is a popular choice on Windows.  
+- Mac OS and Linux should have `ssh` preinstalled.
 
-connect to Le Potato's IP Address with your ssh client.  You may be warned about the identity of the server you are connecting to.  
-This is normal the first time.  click accept if necessary.
+You will need the IP Address of Le Potato.  You can obtain this from your Router's DHCP Lease table.  The specifics of this are unique for every router, and outside the scope of this documentation.
+
+connect to Le Potato's IP Address with your ssh client.  You may be warned about the identity of the server you are connecting to.  This is normal the first time you connect to a new device, click accept if necessary.
 
 ![Putty Security](images/putty_security.png)
 
 
 Log in with username `root` and password `1234` as these are the defaults for new Armbian installations.  
 
-After the first successful login, you will be prompted to change the root password, and guided through creation of a new non-root user account.  
-For the sake of consistency and compatibility with existing documentation, we will choose `pi` as the new username.  
+After the first successful login, you will be prompted to change the root password, and guided through creation of a new non-root user account.  For the sake of consistency and compatibility with existing documentation, we will choose `pi` as the new username.  
 
-When this is finished you will be presented with a command prompt: `root@lepotato:~$`  At this point it is recommended to close the ssh connection
-and reconnect using your newly created username.
+When this is finished you will be presented with a command prompt: `root@lepotato:~$`  At this point it is recommended to close the ssh connection and reconnect using your newly created username.
 
 ![user login](images/user_login.png)
 
@@ -69,8 +66,7 @@ You should update the system packages before proceeding.  Run the following comm
 Enter `Y` to confirm, and the upgrade process will begin.  This may take a while.
 
 
-It's necessary to update the u-boot bootloader on the SD Card after armbian system updates.  
-run `sudo armbian-config` and browse to `System` -> `Install` then choose `Install/Update the bootloader on SD/eMMC`
+It's necessary to update the u-boot bootloader on the SD Card after armbian system updates.  run `sudo armbian-config` and browse to `System` -> `Install` then choose `Install/Update the bootloader on SD/eMMC`
 
 ![armbian_config](images/armbian-config.png)
 
@@ -85,9 +81,9 @@ cd ~
 git clone https://github.com/th33xitus/kiauh.git
 ```
 
-this will clone the latest version of the kiauh script into to `kiauh` folder in your home directory (/home/pi/kiauh in our case)
+this will clone the latest version of the kiauh script into to `kiauh` folder in your home directory (/home/pi/kiauh in our case).  
 
-to execute kiauh run `./kiauh/kiauh.sh` and you will be presented with a menu similar to this:
+To execute kiauh run `./kiauh/kiauh.sh` and you will be presented with a menu similar to this:
 
 ![kiauh](images/kiauh_main.png)
 
